@@ -23,4 +23,12 @@
         line-height: $space-separation-and-half;
         margin-left: $space-separation
     }
+
+    @media only screen and (max-width: 768px) {
+        flex-direction: column;
+
+        &__rule-thumb {
+            margin-top: $space-separation;
+        }
+    }
 }

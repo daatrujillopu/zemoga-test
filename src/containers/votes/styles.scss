@@ -8,6 +8,10 @@
         flex-wrap: wrap;
         justify-content: space-between;
         margin-top: $space-separation-2x;
+
+        @media only screen and (max-width: 992px) {
+            flex-direction: column;
+        }
     }
 
     &__box {
@@ -20,6 +24,18 @@
 
         &:nth-child(even) {
             padding-left: $space-separation;
+        }
+
+        @media only screen and (max-width: 992px) {
+            flex-basis: 100%;
+
+            &:nth-child(odd) {
+                padding-right: 0;
+            }
+
+            &:nth-child(even) {
+                padding-left: 0;
+            }
         }
     }
 
@@ -124,6 +140,12 @@
             background: rgba(255, 173, 29, 0.7);
             justify-content: flex-end;
             padding-right: $space-separation;
+        }
+    }
+
+    @media only screen and (max-width: 768px) {
+        &__character-info {
+            flex-basis: 80%;
         }
     }
 }

@@ -25,4 +25,22 @@
         font-size: $font-size-and-eighth;
         padding: 0.8rem $space-separation-2x;
     }
+
+    @media only screen and (max-width: 768px) {
+        height: 120px;
+
+        &__container {
+            flex-direction: column;
+        }
+
+        &__text {
+            font-size: $font-main-size;
+        }
+
+        &__submit-name {
+            font-size: $font-main-size;
+            margin-top: $space-separation;
+            padding: 0.5rem $space-separation;
+        }
+    }
 }

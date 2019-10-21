@@ -8,6 +8,10 @@
     &__position {
         max-width: 430px;
         min-width: 200px;
+
+        @media only screen and (max-width: 992px) {
+            margin: 0 auto;
+        }
     }
 
     &__container {
@@ -16,11 +20,19 @@
         height: 40vh;
         padding: $space-separation-2x;
         position: relative;
+
+        @media only screen and (max-width: 768px) {
+            height: 45vh;
+        }
     }
 
     &__text {
         font-size: $font-size-and-quarter;
         font-weight: 300;
+
+        @media only screen and (max-width: 768px) {
+            font-size: $font-main-size;
+        }
     }
 
     &__more-information {
@@ -30,6 +42,11 @@
     &__verdict {
         font-size: $font-size-and-quarter;
         margin-top: $space-separation-3x;
+
+        @media only screen and (max-width: 768px) {
+            font-size: $font-main-size;
+            margin-top: $space-separation;
+        }
     }
 
     &__footer {
@@ -43,6 +60,14 @@
             &--icon {
                 font-size: $font-size-2x;
                 vertical-align: middle;
+            }
+
+            @media only screen and (max-width: 768px) {
+                @include same-height-line-height(50px);
+
+                &--icon {
+                    font-size: $font-size-and-half;
+                }
             }
         }
 

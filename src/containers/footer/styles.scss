@@ -47,6 +47,22 @@ footer {
                 vertical-align: middle;
             }
         }
+    }
 
+    @media only screen and (max-width: 768px) {
+        flex-direction: column;
+
+        .footer {
+            &__social-network {
+                flex-basis: 100%;
+                justify-content: space-between;
+                padding: 0;
+                width: 100%;
+
+                li:not(:first-child) {
+                    margin-left: none;
+                }
+            }
+        }
     }
 }
