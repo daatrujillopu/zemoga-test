@@ -1,0 +1,66 @@
+%container {
+    width: 80%;
+    position: relative;
+    height: auto;
+    margin: 0 auto;
+}
+
+.box-info-vote {
+    @extend %container;
+    padding: 0;
+    top: 10%;
+
+    &__position {
+        min-width: 200px;
+        max-width: 430px;
+    }
+
+    &__container {
+
+        height: 40vh;
+        position: relative;
+        backdrop-filter: blur(12px);
+        background-color: rgba(128, 127, 127, 0.6);
+        padding: 2rem;
+    }
+
+    &__text {
+        font-size: 1.25rem;
+        font-weight: 300;;
+    }
+
+    &__more-information {
+        font-size: 0.85rem;
+    }
+
+    &__verdict {
+        font-size: 1.25rem;
+        margin-top: 3rem;
+    }
+
+    &__footer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &-thumbs-up, &-thumbs-down {
+            height: 70px;
+            line-height: 70px;
+            width: 100%;
+            text-align: center;
+
+            &--icon {
+                font-size: 2rem;
+                vertical-align: middle;
+            }
+        }
+
+        &-thumbs-up {
+            background: rgba(12, 187, 178, 0.8);
+            backdrop-filter: blur(12px);
+        }
+        &-thumbs-down {
+            background: rgba(252, 160, 0, 0.8)
+        }
+    }
+}

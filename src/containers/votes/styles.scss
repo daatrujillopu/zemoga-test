@@ -1,0 +1,128 @@
+.votes {
+    margin: 2rem 0 0 0;
+
+    &__container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 2rem;
+    }
+
+    &__box {
+        flex-basis: 50%;
+        margin-bottom: 2rem;
+
+        &:nth-child(odd) {
+            padding-right: 1rem;
+        }
+
+        &:nth-child(even) {
+            padding-left: 1rem;
+        }
+    }
+
+    &__background {
+        height: 500px;
+        position: relative;
+
+        &:after {
+            content:'';
+            position:absolute;
+            left:0;
+            top:0;
+            width:100%;
+            height:100%;
+            background-image: linear-gradient(to top, rgba(51, 51, 51, 0.9),
+            rgba(51, 51, 51, 0.9),
+            rgba(51, 51, 51, 0.9),
+            rgba(51, 51, 51, 0.5),
+            rgba(51, 51, 51, 0.3),
+            rgba(51, 51, 51, 0.2),
+            rgba(51, 51, 51, 0.1),
+            rgba(51, 51, 51, 0)
+            );
+        }
+    }
+
+    &__info-container {
+        bottom: 0;
+        display: flex;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        position: absolute;
+        width: inherit;
+        color: #fff;
+        z-index: 1;
+    }
+
+    &__thumb-up-voting, &__thumb-down-voting {
+        padding: 0.3rem;
+        color: #fff;
+        margin-top: 1rem;
+
+        &--icon {
+            font-size: 1.5rem;
+            vertical-align: middle;
+        }
+    }
+
+    &__thumb-up-voting {
+        background: #1cbbb4;
+    }
+
+    &__thumb-down-voting {
+        background: #ffad1d;
+    }
+
+    &__character-info {
+        flex-basis: 90%;
+        padding-left: 1rem;
+    }
+
+    &__buttons-container {
+        display: flex;
+        align-items: center;
+
+        button {
+            margin-right: 1rem;
+        }
+    }
+
+    &__progresive-bars {
+        flex-basis: 100%;
+        display: flex;
+        height: 50px;
+        margin-top: 2rem;
+    }
+
+    .progresive-bars {
+
+        &__thumb-up, &__thumb-down {
+            align-items: center;
+            display: flex;
+
+            &--percent {
+                font-size: 2rem;
+                font-weight: 300;
+            }
+
+            &--icon {
+                font-size: 1.5rem;
+                vertical-align: middle;
+            }
+        }
+
+        &__thumb-up {
+            background: rgba(28, 187, 180, 0.7);
+            padding-left: 1rem;
+        }
+
+        &__thumb-down {
+            background: rgba(255, 173, 29, 0.7);
+            justify-content: flex-end;
+            padding-right: 1rem;
+        }
+    }
+
+
+}

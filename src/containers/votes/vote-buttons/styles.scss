@@ -1,0 +1,39 @@
+.buttons-container {
+
+    &__thumb-up {
+        background: #1cbbb4;
+        padding: 0.4rem;
+    }
+
+    &__thumb-down {
+        background: #ffad1d;
+        padding: 0.4rem;
+
+    }
+
+    &__thumb-up, &__thumb-down {
+        color: #fff;
+        border: none;
+
+        &.selected {
+            border: 1px solid #fff;
+        }
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    &__vote-now {
+        height: 100%;
+        background: transparent;
+        border: 1px solid #fff;
+        color: #fff;
+        padding: .7rem 1.25rem;
+        font-weight: bold;
+
+        &:focus {
+            outline: none;
+        }
+    }
+}

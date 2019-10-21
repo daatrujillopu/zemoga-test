@@ -1,0 +1,63 @@
+[
+    {
+        "id": 1,
+        "artist": {
+            "altImage": "Kanye West new album upcoming",
+            "area": "entertainment",
+            "image": "https://assets.bigcartel.com/product_images/222350659/Kanye+West+Small.jpg?auto=format&fit=max&h=1000&w=1000",
+            "name": "kanye west",
+            "timeVotingMonths": 1,
+            "shortInfo": "Vestibulum diam antes, porttitor a odio eget, rhoncus neque. Aenean eu velit liberos"
+        },
+        "votes": {
+            "thumbsUp": 49,
+            "thumbsDown": 51
+        }
+    },
+    {
+        "id": 2,
+        "artist": {
+            "altImage": "Mark Zukerberg from facebook summer summit",
+            "area": "business",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/1/14/Mark_Zuckerberg_F8_2018_Keynote_%28cropped_2%29.jpg",
+            "name": "mark zuckerberg",
+            "shortInfo": "Vestibulum diam antes, porttitor a odio eget, rhoncus neque. Aenean eu velit liberos",
+            "timeVotingMonths": 1
+        },
+        "votes": {
+            "thumbsUp": 40,
+            "thumbsDown": 60
+        }
+    },
+
+    {
+        "id": 3,
+        "artist": {
+            "altImage": "public statement on trail against cristina kirchner ",
+            "area": "Politics",
+            "image": "https://www.plusinformacion.com.ar/adjuntos/imagenes-notas/58119.jpg",
+            "name": "cristina kirchner",
+            "shortInfo": "Vestibulum diam antes, porttitor a odio eget, rhoncus neque. Aenean eu velit liberos",
+            "timeVotingMonths": 1
+        },
+        "votes": {
+            "thumbsUp": 40,
+            "thumbsDown": 60
+        }
+    },
+    {
+        "id": 4,
+        "artist": {
+            "altImage": "Malala Yousafzai in a interview",
+            "area": "entertainment",
+            "image": "http://cdn01.cdn.justjaredjr.com/wp-content/uploads/2015/11/malala-portrait/malala-yousafzai-unveils-official-portrait-09.jpg",
+            "name": "Malala Yousafzai",
+            "shortInfo": "Vestibulum diam antes, porttitor a odio eget, rhoncus neque. Aenean eu velit liberos",
+            "timeVotingMonths": 1
+        },
+        "votes": {
+            "thumbsUp": 31,
+            "thumbsDown": 69
+        }
+    }
+]

@@ -1,2 +1,16 @@
+%container {
+    height: auto;
+    margin: 0 auto;
+    position: relative;
+    width: 80%;
+}
+
+%normal-heading {
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+}
+
 $text-color-white: #fff;
 $text-color-black: #000;
+

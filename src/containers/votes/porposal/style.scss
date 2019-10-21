@@ -1,0 +1,26 @@
+.porposal {
+    align-items: center;
+    background: #ebebeb;
+    display:flex;
+    justify-content: center;
+    margin-top: 2rem;
+    padding: 1.5rem;
+
+    &__objetive {
+        &--text {
+            font-size: 1.25rem;
+            font-weight: 400;
+        }
+
+        &--bold-text {
+            font-size: 2rem;
+            font-weight: bold;
+        }
+    }
+
+    &__rule-thumb {
+        flex: 1;
+        line-height: 1.5rem;
+        margin-left: 1rem;
+    }
+}

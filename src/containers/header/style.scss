@@ -1,0 +1,29 @@
+.header {
+    height: 85vh;
+    position: relative;
+    top: 0;
+    width: 100%;
+
+    .background {
+        position: absolute;
+    }
+
+    .menu-with-gradient {
+        background-image: linear-gradient(to bottom, rgba(70, 70, 70, 0.7),
+            rgba(70, 70, 70, 0.6),
+            rgba(70, 70, 70, 0.5),
+            rgba(70, 70, 70, 0.4),
+            rgba(70, 70, 70, 0.3),
+            rgba(70, 70, 70, 0.2),
+            rgba(70, 70, 70, 0.1),
+            rgba(70, 70, 70, 0)
+        );
+        position: relative;
+    }
+
+    nav {
+        margin: 0 auto;
+        position: relative;
+        width:80%;
+    }
+}
