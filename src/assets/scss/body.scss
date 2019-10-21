@@ -1,5 +1,4 @@
-
-
+@import './variables.scss';
 * {
     box-sizing: border-box;
 }
@@ -11,40 +10,40 @@ h1, h2, h3, h4, h5 {
 }
 
 h2 {
-    font-size: 3.5rem;
+    font-size: $font-size-3x-and-half;
 }
 
 h3 {
-    font-size: 2rem;
+    font-size: $font-size-2x;
 }
 
 h4 {
-    font-size: 1.25rem;
+    font-size: $font-size-and-quarter;
 }
 
 h5 {
     @extend %normal-heading;
-    font-size: 1.125rem;
+    font-size: $font-size-and-eighth;
 
 }
 
 h6 {
     @extend %normal-heading;
-    font-size: 1rem;
+    font-size: $font-main-size;
     font-weight: 100;
 
 }
 
 a {
-    color: #FFF;
+    color: $color-white;
 }
 
 body {
-    font-size: 16px;
+    color: $color-white;
     font-family: 'Lato', sans-serif;
-    color: #fff;
-    width: 1200px;
+    font-size: 16px;
     margin: 0 auto;
+    width: 1200px;
 }
 
 
@@ -69,8 +68,8 @@ img {
 
 section {
     @extend %container;
-    background: #fff;
-    color: #464646;
+    background: $color-white;
+    color: $color-gray-text;
     height: auto;
 }
 

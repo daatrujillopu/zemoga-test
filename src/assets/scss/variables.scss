@@ -1,3 +1,10 @@
+// mixins
+
+@mixin same-height-line-height($value) {
+    height: $value;
+    line-height: $value;
+}
+
 %container {
     height: auto;
     margin: 0 auto;
@@ -11,6 +18,36 @@
     padding: 0;
 }
 
-$text-color-white: #fff;
-$text-color-black: #000;
+%flex-center {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+// background colors
+$thumb-up-background: #1CBBB4;
+$thumb-down-background: #FFAD1D;
+$gray-background: #EBEBEB;
+
+
+//color
+$color-white: #FFF;
+$color-black: #000;
+$color-gray-text: #464646;
+$color-darker-gray-text: #717171;
+
+//font-sizes
+$font-main-size: 1rem;
+$font-size-and-eighth: $font-main-size * 1.125;
+$font-size-and-quarter: $font-main-size * 1.25;
+$font-size-and-half: $font-main-size * 1.5;
+$font-size-2x: $font-main-size * 2;
+$font-size-3x: $font-main-size * 3;
+$font-size-3x-and-half: $font-main-size * 3.5;
+
+//space separation
+$space-separation: 1rem;
+$space-separation-and-half: $space-separation * 1.5;
+$space-separation-2x: $space-separation * 2;
+$space-separation-3x: $space-separation * 3;
 

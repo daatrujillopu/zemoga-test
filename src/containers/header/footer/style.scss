@@ -1,10 +1,11 @@
+@import '../../../assets/scss/variables.scss';
+
 .header {
     &__footer {
+        @include same-height-line-height(50px);
         bottom: 0;
-        color: #717171;
+        color: $color-darker-gray-text;
         display: flex;
-        height: 50px;
-        line-height: 50px;
         position: absolute;
         width: 100%;
 
@@ -13,7 +14,7 @@
             color: #FFFFFF;
             font-size: 0.85rem;
             height: 100%;
-            padding: 0 1rem;
+            padding: 0 $space-separation;
             position: relative;
             text-align: right;
             text-transform: uppercase;
@@ -39,10 +40,10 @@
 
         &-couting-days {
             background: rgba(235, 235, 235, 0.5);
-            color: #464646;
-            font-size: 2rem;
+            color: $color-gray-text;
+            font-size: $font-size-2x;
             font-weight: bold;
-            padding-left: 1rem;
+            padding-left: $space-separation;
             width: 100%;
 
             &--day-text {

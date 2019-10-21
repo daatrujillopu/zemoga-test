@@ -1,26 +1,28 @@
+@import "../../../assets/scss/variables.scss";
+
 .add-person {
     background: url('../../../assets/images/add-person.png');
     height: 70px;
-    margin-bottom: 2rem;
+    margin-bottom: $space-separation-2x;
 
     &__container {
         align-items: center;
         background: rgba(255, 255, 255, 0.8);
         display: flex;
         height: 100%;
-        padding: 1rem;
+        padding: $space-separation;
     }
 
     &__text {
         flex: 1;
-        font-size: 2rem;
+        font-size: $font-size-2x;
         font-weight: 300;
     }
 
     &__submit-name {
         background: transparent;
         border: 3px solid #000;
-        font-size: 1.125rem;
-        padding: 0.8rem 2rem;
+        font-size: $font-size-and-eighth;
+        padding: 0.8rem $space-separation-2x;
     }
 }

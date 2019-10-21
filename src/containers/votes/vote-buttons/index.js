@@ -32,7 +32,7 @@ const VoteButtons = ({
                 onClick={onClickThumbUp}
                 type="button"
             >
-                <FaThumbsUp />
+                <FaThumbsUp className="buttons-container__thumb-up--icon" />
             </button>
 
             <button
@@ -40,7 +40,7 @@ const VoteButtons = ({
                 onClick={onClickThumbDown}
                 type="button"
             >
-                <FaThumbsDown />
+                <FaThumbsDown className="buttons-container__thumb-down--icon" />
             </button>
         </>
     );
@@ -76,9 +76,11 @@ const VoteButtons = ({
 VoteButtons.propTypes = {
     onClickThumbDown: PropTypes.func.isRequired,
     onClickThumbUp: PropTypes.func.isRequired,
+    onClickVoteAgain: PropTypes.func.isRequired,
     onClickVoteNow: PropTypes.func.isRequired,
     thumbDownSelected: PropTypes.bool.isRequired,
-    thumbUpSelected: PropTypes.bool.isRequired
+    thumbUpSelected: PropTypes.bool.isRequired,
+    voteAgain: PropTypes.bool.isRequired
 };
 
 export default VoteButtons;

@@ -1,9 +1,4 @@
-%container {
-    width: 80%;
-    position: relative;
-    height: auto;
-    margin: 0 auto;
-}
+@import '../../../assets/scss/variables.scss';
 
 .box-info-vote {
     @extend %container;
@@ -11,22 +6,21 @@
     top: 10%;
 
     &__position {
-        min-width: 200px;
         max-width: 430px;
+        min-width: 200px;
     }
 
     &__container {
-
-        height: 40vh;
-        position: relative;
         backdrop-filter: blur(12px);
         background-color: rgba(128, 127, 127, 0.6);
-        padding: 2rem;
+        height: 40vh;
+        padding: $space-separation-2x;
+        position: relative;
     }
 
     &__text {
-        font-size: 1.25rem;
-        font-weight: 300;;
+        font-size: $font-size-and-quarter;
+        font-weight: 300;
     }
 
     &__more-information {
@@ -34,23 +28,20 @@
     }
 
     &__verdict {
-        font-size: 1.25rem;
-        margin-top: 3rem;
+        font-size: $font-size-and-quarter;
+        margin-top: $space-separation-3x;
     }
 
     &__footer {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        @extend %flex-center;
 
         &-thumbs-up, &-thumbs-down {
-            height: 70px;
-            line-height: 70px;
-            width: 100%;
+            @include same-height-line-height(70px);
             text-align: center;
+            width: 100%;
 
             &--icon {
-                font-size: 2rem;
+                font-size: $font-size-2x;
                 vertical-align: middle;
             }
         }

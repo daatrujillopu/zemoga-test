@@ -1,26 +1,26 @@
+@import '../../../assets/scss/variables.scss';
+
 .porposal {
-    align-items: center;
-    background: #ebebeb;
-    display:flex;
-    justify-content: center;
-    margin-top: 2rem;
-    padding: 1.5rem;
+    @extend %flex-center;
+    background: $gray-background;
+    margin-top: $space-separation-2x;
+    padding: $space-separation-and-half;
 
     &__objetive {
         &--text {
-            font-size: 1.25rem;
+            font-size: $font-size-and-half;
             font-weight: 400;
         }
 
         &--bold-text {
-            font-size: 2rem;
+            font-size: $font-size-2x;
             font-weight: bold;
         }
     }
 
     &__rule-thumb {
         flex: 1;
-        line-height: 1.5rem;
-        margin-left: 1rem;
+        line-height: $space-separation-and-half;
+        margin-left: $space-separation
     }
 }

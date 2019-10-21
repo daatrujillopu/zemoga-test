@@ -1,36 +1,42 @@
+@import '../../../assets/scss/variables.scss';
+
 .buttons-container {
 
     &__thumb-up {
-        background: #1cbbb4;
+        background: $thumb-up-background;
         padding: 0.4rem;
     }
 
     &__thumb-down {
-        background: #ffad1d;
+        background: $thumb-down-background;
         padding: 0.4rem;
 
     }
 
     &__thumb-up, &__thumb-down {
-        color: #fff;
         border: none;
+        color: $color-white;
 
         &.selected {
-            border: 1px solid #fff;
+            border: 1px solid $color-white;
         }
 
         &:focus {
             outline: none;
         }
+
+        &--icon {
+            vertical-align: middle;
+        }
     }
 
     &__vote-now {
-        height: 100%;
         background: transparent;
-        border: 1px solid #fff;
-        color: #fff;
-        padding: .7rem 1.25rem;
+        border: 1px solid $color-white;
+        color: $color-white;
         font-weight: bold;
+        height: 100%;
+        padding: .7rem 1.25rem;
 
         &:focus {
             outline: none;
